@@ -44,3 +44,45 @@ int main() {
 
 	return 0;
 }
+
+/** 예제 정답풀이 **/
+
+
+#include <stdio.h>
+
+// 평균 값이 가장 높은 사람 이름 출력
+
+struct Student {
+	char name[10];
+	int kor;
+	int eng;
+	int math;
+	int avg;
+};
+
+int main() {
+
+	struct Student stu[5];
+
+	int maxIndex = 0;
+
+	for (int i = 0; i < 5; i++) {	// 학생 정보 입력
+		scanf_s("%s", stu[i].name, 10);		// 이름, 10 -> 칸 
+		scanf_s("%d %d %d", &stu[i].kor, &stu[i].eng, &stu[i].math, 10);	// 국영수 점수
+		
+		stu[i].avg = (stu[i].kor + stu[i].eng + stu[i].math) / 3;
+
+		if (stu[maxIndex].avg < stu[i].avg) {
+			maxIndex = i;
+		}
+	}
+
+	// 각 학생의 평균값 계산
+	// 입력값 최대값과 비교
+	// 큰 값 MAX 처리
+
+	printf("%s", stu[maxIndex].name);
+
+
+	return 0;
+}
