@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 // Call by Value | Call by Reference
-// °ªÀ¸·Î ÇÔ¼ö È£Ãâ | ÁÖ¼Ò°ª(Æ÷ÀÎÅÍ)À¸·Î ÇÔ¼ö È£Ãâ
-// ÇÔ¼ö È£Ãâ ÇÒ ¶§ ¸Å°³º¯¼ö·Î value(= °ª) Àü´Ş | ÁÖ¼Ò°ª ´øÁü  
+// ê°’ìœ¼ë¡œ í•¨ìˆ˜ í˜¸ì¶œ | ì£¼ì†Œê°’(í¬ì¸í„°)ìœ¼ë¡œ í•¨ìˆ˜ í˜¸ì¶œ
+// í•¨ìˆ˜ í˜¸ì¶œ í•  ë•Œ ë§¤ê°œë³€ìˆ˜ë¡œ value(= ê°’) ì „ë‹¬ | ì£¼ì†Œê°’ ë˜ì§  
 
 
-// Call by Value ¿¹½Ã
+// Call by Value ì˜ˆì‹œ
 void changeNum(int a) {		// int a = num;
-	a = 7;					// int a = 5;
+	a = 7;			// int a = 5;
 }
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
 }
 	
 	
-// Call by Reference ¿¹½Ã
+// Call by Reference ì˜ˆì‹œ
 void changeNum(int* a) {	// int* a = &num;
 	*a = 7;			
 }
