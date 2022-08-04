@@ -4,7 +4,7 @@ int main() {
 	char good[] = { 'g', 'o', 'o', 'd', '\n'};
 	char verygood[] = "verygood";
 
-	char perfect[] = "perfect";		// ¹è¿­ÀÇ ¿ªÇÒ
+	char perfect[] = "perfect";		// ë°°ì—´ì˜ ì—­í• 
 	char* perfect = "perfect";
 
 	return 0;
