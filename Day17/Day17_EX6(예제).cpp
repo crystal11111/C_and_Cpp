@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+// 회문 예제
+
 int main() {
 	string line;
 	getline(cin, line);
