@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 /*
@@ -7,12 +8,12 @@ using namespace std;
 	- 필드 (클래스 안의 변수)
 	: 객체의 데이터/ 부품
 	ex) 사람 - 이름, 나이, 몸무게, 키, 학점,...
-	    커피 - 이름, 온도, 가격, 맛, ...
+		커피 - 이름, 온도, 가격, 맛, ...
 
 	- 메소드 (클래스 안의 함수)
 	: 객체의 기능/ 행동/ 상태
 	ex) 사람 - 먹는다, 잔다, 걷는다, 뛴다,...
-	    커피 - 만들어진다, ...
+		커피 - 만들어진다, ...
 
 	- 생성자 Constructor=ctor (반환타입이 없는, 클래스 이름이랑 같은 특별한 메소드)
 	: 클래스를 기반으로 객체를 생성해줌
@@ -69,7 +70,12 @@ void Snack::info() {
 }
 
 int main()	{
-	Snack poca("수미칩");	// 생성자 호출방법
+	string name;
+	cout << "어떤 과자를 주문하시겠어요 ?" << endl;
+	getline(cin, name);
+
+
+	Snack poca(name);	// 생성자 호출방법
 	// poca.setName("포카칩");
 	// poca.name = "포카칩";
 	cout << poca.getName() << endl;
