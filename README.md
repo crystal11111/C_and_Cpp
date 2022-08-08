@@ -11,3 +11,4 @@ C언어(포인터)를 쓰는 업계
 - C++ = C + Java
 	= 언어는 C, 코딩(생각) 방법은 Java
 17. C++ 클래스, private/public
+18. C++ Method, 생성자
