@@ -2,23 +2,25 @@
 #include <string>
 using namespace std;
 
-// È¸¹® ¿¹Á¦
-
-
-
 int main() {
 	string line;
 	getline(cin, line);
+	int length = line.length();
+	char flag = false;
 
-	if (strlen(line) % 3 == 0) {
-		middle = strlen(line) / 2;
-		line[1] == line[3];
-		cout << "È¸¹®ÀÔ´Ï´Ù.";
+	for (int i = 0; i < length; i++) {
+		if (line[i] != line[length - i - 1]) {
+			flag = true;
+			break;
+		}
 	}
+		if(flag){
+			cout << "íšŒë¬¸ì´ ì•„ë‹™ë‹ˆë‹¤.";
+		} else {
+			cout << "íšŒë¬¸ì…ë‹ˆë‹¤.";
+		}
 
-	else if (strlen(line)%2==0) {
-		
-	}
+
 
 	return 0;
 }
