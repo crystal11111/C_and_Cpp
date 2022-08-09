@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// 회문 예제
+// 회문예제
 
 int main() {
 	string line;
