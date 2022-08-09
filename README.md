@@ -13,3 +13,4 @@ C언어(포인터)를 쓰는 업계
 17. C++ 클래스, private/public
 18. C++ Method, 생성자, 깃허브
 19. C++ string, C 문자열, 예외처리
+- EX4) while(1) 했을때 고민해보기
