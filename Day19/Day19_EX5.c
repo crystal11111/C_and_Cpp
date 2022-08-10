@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 	char a[] = "apple";
 	char b[] = "applepppppppp";
 
-
-	// b °°Àº »óÈ²ÀÏ¶§ Ã³¸®ÇÏ´Â ¹ı if ½á¼­ Ç®¾îº¸±â & ¸ŞÀÏ
+	/*
+	// b ê°™ì€ ìƒí™©ì¼ë•Œ ì²˜ë¦¬í•˜ëŠ” ë²• if ì¨ì„œ í’€ì–´ë³´ê¸° & ë©”ì¼
 	int isSame = 1;
 	for (int i = 0; i < 6; i++) {
 		if (a[i] != b[i]) {
@@ -13,7 +14,18 @@ int main() {
 			break;
 		}
 	}
-
+	*/
+	
+	// ë‹µ
+	isSame = strcmp(a, b);		// 0ì´ ë‚˜ì˜¤ë©´ ê°™ë‹¤ëŠ” ëœ»
+	if (strlen(a) == strlen(b)) {
+		for (int i = 0; i < 6; i++) {
+			if (a[i] != b[i]) {
+				isSame = 0;
+				break;
+			}
+		}
+	}
 
 	int n1 = 5;
 	int n2 = 5;
