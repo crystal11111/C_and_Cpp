@@ -1,30 +1,30 @@
-//#include <stdio.h>
-//
-///*
-//	ÇÔ¼ö ¿À¹ö·Îµù
-//	C++¿¡¼­´Â ÄÄÆÄÀÏ·¯°¡ ÇÔ¼öÀÌ¸§ÀÌ °°À» ¶§¿¡µµ ÇÔ¼ö¸¦ ±¸ºĞÇÒÁÙ ¾È´Ù
-//	±¸ºĞ ±âÁØ : ¸Å°³º¯¼ö °³¼ö / ÀÚ·áÇü / ¼ø¼­
-//	¹İÈ¯ Å¸ÀÔÀº ±¸ºĞ ¸ø ÇÔ
-// 
-//	C¿¡¼­ µÇ¸é C++¿¡¼­ ¹«Á¶°Ç µÊ
-//*/
-//
-//int plus(int a, int b, int c) {
-//	return a + b + c;
-//
-//}
-///*
-//int plus(int a, int b) {
-//	return a + b;
-//}
-//*/
-//
-//int main() {
-//	int result = plus(1, 2, 3);
-//	printf("%d\n", result);
-//
-//	int result2 = plus(3, 4);		// ¾ÈµÊ
-//	printf("%d", result2);
-//
-//	return 0;
-//}
+#include <stdio.h>
+
+/*
+	í•¨ìˆ˜ ì˜¤ë²„ë¡œë”©
+	C++ì—ì„œëŠ” ì»´íŒŒì¼ëŸ¬ê°€ í•¨ìˆ˜ì´ë¦„ì´ ê°™ì„ ë•Œì—ë„ í•¨ìˆ˜ë¥¼ êµ¬ë¶„í• ì¤„ ì•ˆë‹¤
+	êµ¬ë¶„ ê¸°ì¤€ : ë§¤ê°œë³€ìˆ˜ ê°œìˆ˜ / ìë£Œí˜• / ìˆœì„œ
+	ë°˜í™˜ íƒ€ì…ì€ êµ¬ë¶„ ëª» í•¨
+ 
+	Cì—ì„œ ë˜ë©´ C++ì—ì„œ ë¬´ì¡°ê±´ ë¨
+*/
+
+int plus(int a, int b, int c) {
+	return a + b + c;
+
+}
+/*
+int plus(int a, int b) {
+	return a + b;
+}
+*/
+
+int main() {
+	int result = plus(1, 2, 3);
+	printf("%d\n", result);
+
+	int result2 = plus(3, 4);		// ì•ˆë¨
+	printf("%d", result2);
+
+	return 0;
+}
